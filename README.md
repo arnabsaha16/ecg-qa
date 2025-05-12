@@ -8,8 +8,10 @@ For more detailed information about the dataset, please refer to [ECG-QA: A Comp
 > [!NOTE]
 > As of 2024-04-11 (`yyyy-mm-dd`), we republished v1.0.2 after confirming that all sampling processes regarding MIMIC-IV-ECG-based ECG-QA have no error at all. **Please re-download the dataset if your dataset is out-dated**.
 
+* May 2025
+    * The sampled list of ECG-QA ids that have been used for the LLM experiments reported in the dataset paper have been released. Please find this list [here](llm_modeling/examples/sampled_ecgqa_ids.txt).
 * May 2024
-    * Errors occurred in PTB-XL ECG-QA samples have been corrected, where we replaced `"late stage of myocardial infarction"` with `"old stage of myocardial infarction"` in the `answer`s for the corresponding samples. Other samples remain the same with the last release. This change has been merged to v1.0.2
+    * Errors occurred in PTB-XL ECG-QA samples have been corrected, where we replaced `"late stage of myocardial infarction"` with `"old stage of myocardial infarction"` in the `answer`s for the corresponding samples. Other samples remain the same with the last release. This change has been merged to v1.0.2.
 * April 2024
     * (2024-04-11) Released a new version of v1.0.2 after ensuering all sampling processes regarding MIMIc-IV-ECG-based ECG-QA have no error at all. **Please re-download the dataset if your dataset is out-dated**.
 * March 2024
@@ -355,6 +357,8 @@ For detailed implementations, please refer to [here](https://github.com/Jwoo5/fa
 
     You also need to pass OpenAI's API key ($api_key) to load the OpenAI's GPT model.  
     $model_name should be consistent with OpenAI API Models (e.g., `gpt-4-turbo`, `gpt-3.5-turbo`).
+
+    **[Updated at May 2025]** The sampled list of ECG-QA ids that have been used for the LLM experiments reported in the dataset paper have been released. Please find this list [here](llm_modeling/examples/sampled_ecgqa_ids.txt).
 
 # Contact
 If you have any questions or suggestions, feel free to contact me!
